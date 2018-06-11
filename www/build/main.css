@@ -25678,15 +25678,38 @@ ion-navbar.toolbar {
   min-height: calc(46px + env(safe-area-inset-bottom));
 }
 
-.toolbar-class {
+ion-scroll {
+  white-space: nowrap;
+}
+
+.toolbar {
   toolbar-background: dark;
 }
 
-.toolbar-class ion-toolbar {
+.toolbar ion-toolbar {
   color: light;
 }
 
-.toolbar-class img {
+.toolbar img {
   margin-left: 10px;
   margin-top: 10px;
+}
+
+.buttons ion-icon {
+  font-size: 30px;
+}
+
+.container-toolbar {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.container-toolbar img {
+  padding: 5px;
 }
