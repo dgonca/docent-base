@@ -17,9 +17,9 @@
     </ion-header>
   </div>
 </div>
-<ion-content>
-  <p>Test</p>
-  <p>Test</p>
+<ion-content padding>
+  <br>
+  <br>
   <h1>Start New Assessment</h1>
   <font color="grey">Use this option to start a new assessment</font>
   <br><br>
@@ -30,8 +30,12 @@
       <ion-input type="text" name="memRole" placeholder = "Member Role"></ion-input>
     </ion-item>
     <div class = "buttons">
-      <ion-icon name="remove-circle" color = "danger"></ion-icon>
-      <ion-icon name="add-circle" color = "secondary"></ion-icon>
+      <button (click)="addMember()">
+        <ion-icon name="remove-circle" color = "danger"></ion-icon>
+      </button>
+      <button (click)="removeMember()">
+        <ion-icon name="add-circle" color = "secondary"></ion-icon>
+      </button>
     </div>
   </form>
   <h6>Scope</h6>
@@ -75,4 +79,7 @@
       <ion-option>2017</ion-option>
     </ion-select>
   </ion-item>
+  <button style="font-size: 30px;" (click)="page_2()">
+      Next <ion-icon name="arrow-dropright" style="font-size: 30px"></ion-icon>
+  </button>
 </ion-content>
